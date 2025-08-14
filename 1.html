@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <meta
+			name="viewport"
+			content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Impress Magazine - Summer, 2025</title>
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="/assets/nav-images/logo.png" />
+		<link id="favicon" rel="shortcut icon" href="/assets/nav-images/logo.png" />
+
+		<link href="/assets/css/styles-slideshow.css" rel="stylesheet" />
+
+		<link href="/assets/css/styles-tooltip.css" rel="stylesheet" />
+		<link href="/assets/css/styles-modal.css" rel="stylesheet" />
+		<link href="/assets/css/styles-modal-split.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="/assets/scripts/scripts.js"></script>
+
+		<script>
+			(function () {
+				try {
+					const savedTheme = localStorage.getItem("theme");
+					const prefersDark = window.matchMedia(
+						"(prefers-color-scheme: dark)"
+					).matches;
+					if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+						document.documentElement.classList.add("dark");
+					} else if (savedTheme === "light") {
+						document.documentElement.classList.remove("dark");
+					} else {
+						// Default to dark if nothing set and system isn't dark
+						document.documentElement.classList.add("dark");
+					}
+				} catch (e) {
+					console.error("Error applying initial theme class:", e);
+				}
+			})();
+		</script>
+	</head>
+	<body>
+		<nav id="icon-nav">
+			<a
+				href="https://impress.isesaki.in"
+				aria-label="Impress Magazine Gallery"
+				class="slide-nav-trigger"
+				data-target-slide="slide-alpha"
+				>&#128213;</a
+			>
+			<a
+				href="index.html"
+				aria-label="Front Cover"
+				class="slide-nav-trigger"
+				data-target-slide="slide-beta"
+				>&#x23EA;</a
+			>
+			<a href="1.html" aria-label="1">&#x0031;</a>
+			<a href="1.html" aria-label="2">&#x0032;</a>
+			<a href="3.html" aria-label="3">&#x0033;</a>
+			<a href="3.html" aria-label="4">&#x0034;</a>
+			<a href="5.html" aria-label="5">&#x0035;</a>
+			<a href="5.html" aria-label="6">&#x0036;</a>
+			<a href="cover.html" aria-label="Back Cover">&#x23E9;</a>
+			<a href="about.html" aria-label="About">&#128209;</a>
+			<button id="theme-toggle" aria-label="Switch theme"></button>
+
+			<button id="snow-toggle" aria-label="Toggle Snowflakes">&#x2744;</button>
+		</nav>
+
+		<main id="hero">
+			<div id="container">
+				<!-- Your website content goes here -->
+
+				<div class="item sidebar sidebar-left"></div>
+
+				<div class="item gap-left"></div>
+
+				<div
+					class="item content-center"
+					id="page-content"
+					style="
+						background-image: url('/assets/Web/page012.jpg');
+						background-size: contain;
+						background-position: center;
+						background-repeat: no-repeat;
+					"
+					data-page-number="1"
+					data-prev-page="index.html"
+					data-next-page="3.html"
+					data-landscape-bg="/assets/Web/page012.jpg"
+					data-portrait-left="/assets/Web/page01.jpg"
+					data-portrait-right="/assets/Web/page02.jpg"
+				>
+					<div class="left-content">
+						<div class="items hidden-text" id="text1-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShowWithNav('audio1-1', 'text1-1', 'play1-1','prev-portrait', 'next-portrait')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container2" class="slideshow-container">
+										<!-- Slides -- Change for SlideShow1 or 2 -->
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/butterfly.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Butter Fly"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Why did the man throw the butter out the window?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														To see a
+														<span class="tooltip"
+															>butter fly.<span class="tooltiptext"
+																>(butterfly)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														butterfly: 蝶々 <br />butter fly: バターが飛ぶ
+													</p>
+
+													<div class="numbertext">1 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/fastfood.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Fast Food"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a pizza on wheels?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Fast food!
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														fast food: ファーストフード（マックなど）<br />fast
+														food: 速い食べ物
+													</p>
+
+													<div class="numbertext">2 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/toomanyproblems.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Sad Math Book"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Why was the math book sad?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Because it had too many problems!
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														problems: 数学の問題 <br />problems: 人生の問題
+													</p>
+
+													<div class="numbertext">3 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/planetparty.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Planet Party"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you do when you want to have a space party?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														You
+														<span class="tooltip"
+															>planet.<span class="tooltiptext"
+																>(plan it)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														planet: 惑星 <br />plan it: 計画する
+													</p>
+
+													<div class="numbertext">4 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/blueberry.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Blueberry"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a sad strawberry?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														A
+														<span class="tooltip"
+															>blue berry!
+															<span class="tooltiptext">(blueberry)</span></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														blueberry: ブルーベリー <br />blue berry: (sad
+														berry) 悲しいベリー
+													</p>
+
+													<div class="numbertext">5 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/allright.png"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="All Right"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														A man lost his left arm and leg.
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														He’s
+														<span class="tooltip"
+															>all right<span class="tooltiptext"
+																>(alright)</span
+															></span
+														>
+														now.
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														alright: 大丈夫 <br />all right: 全てが右
+													</p>
+
+													<div class="numbertext">6 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/tastefunny.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Tastes Funny"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Why did the lion spit out the clown?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Because he tasted funny!
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														funny: 面白い <br />(taste) funny: （味が）変
+													</p>
+
+													<div class="numbertext">7 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/nachocheese.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Nacho Cheese"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call cheese that isn't yours?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														<span class="tooltip"
+															>Nacho<span class="tooltiptext"
+																>(not your)</span
+															></span
+														>
+														cheese!
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														nacho:
+														ナチョス（メキシコの料理：トルティーヤチップスと溶けたチーズ）
+														<br />not your: あなたのものではない
+													</p>
+
+													<div class="numbertext">8 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/wiener.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="A Wiener"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a hot dog that won a gold medal?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														A
+														<span class="tooltip">
+															wiener<span class="tooltiptext"
+																>(winner)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														winner: 勝者<br />wiener:
+														（ホットドッグの）ウィーナー
+													</p>
+
+													<div class="numbertext">9 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/paperless.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Paperless"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														My office went paperless.
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Don’t use the toilets here.
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														paper: 紙<br />paper: （トイレット）ペーパー
+													</p>
+
+													<div class="numbertext">10 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/seafooddiet.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Seafood Diet"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														I'm on a seafood diet.
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														I see food and I eat it.
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														seafood: シーフード・海鮮<br />see food:
+														食べ物を見に入る
+													</p>
+
+													<div class="numbertext">11 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/nobodynose.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Nobody Knows"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a person with no body and no nose?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														<span class="tooltip">
+															No body<span class="tooltiptext"
+																>(nobody)</span
+															></span
+														>
+														<span class="tooltip">
+															nose.<span class="tooltiptext"
+																>(knows)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														nobody: 誰でもない<br />no body: 体がない
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														knows: 知っている<br />nose: 鼻
+													</p>
+													<div class="numbertext">12 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/twothirty.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Two Thirty"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What time did the man go to the dentist?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														<span class="tooltip">
+															Tooth hurt-y.<span class="tooltiptext"
+																>(two thirty)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														two thirty: ２時半誰<br />tooth hurty: 歯が痛い
+													</p>
+													<div class="numbertext">13 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/sevenatenine.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Seven Ate Nine"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Why is seven the scariest number?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														Because seven
+														<span class="tooltip">
+															eight<span class="tooltiptext">(ate)</span></span
+														>
+														nine.
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														two thirty: ２時半誰<br />tooth hurty: 歯が痛い
+													</p>
+													<div class="numbertext">14 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/maybe.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Maybe"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a bee that can’t decide?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														A maybe.
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														maybe: 多分<br />may bee: ５月のハチ
+													</p>
+													<div class="numbertext">15 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="/assets/Web/Puns/twrecks.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="T-Rex"
+												/>
+												<div class="caption-container">
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														What do you call a dinosaur that breaks things?
+													</p>
+													<p
+														style="
+															font-size: 3rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														A
+														<span class="tooltip">
+															T-Wrecks!<span class="tooltiptext"
+																>(T-Rex)</span
+															></span
+														>
+													</p>
+													<p
+														style="
+															font-size: 1.2rem;
+															line-height: 1.8;
+															text-align: center;
+														"
+													>
+														T-Rex (tyrannosaurus rex): ティラノサウルス<br />wrecks:
+														壊す
+													</p>
+													<div class="numbertext">16 / 16</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -- Change for SlideShow1 or 2 -->
+										<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+										<br />
+									</div>
+								</div>
+
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<!-- Thumbnails -- Change for SlideShow1 or 2 -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/butterfly.jpg"
+											alt="Butter Fly"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/fastfood.jpg"
+											alt="Fast Food"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/toomanyproblems.jpg"
+											alt="Sad Math Book"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/planetparty.jpg"
+											alt="Planet Party"
+											onclick="currentSlide1(4)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/blueberry.jpg"
+											alt="Blueberry"
+											onclick="currentSlide1(5)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/allright.png"
+											alt="All Right"
+											onclick="currentSlide1(6)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/tastefunny.jpg"
+											alt="Tastes Funny"
+											onclick="currentSlide1(7)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/nachocheese.jpg"
+											alt="Nacho Cheese"
+											onclick="currentSlide1(8)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/wiener.jpg"
+											alt="A Wiener"
+											onclick="currentSlide1(9)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/paperless.jpg"
+											alt="Paperless"
+											onclick="currentSlide1(10)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/seafooddiet.jpg"
+											alt="Seafood Diet"
+											onclick="currentSlide1(11)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/nobodynose.jpg"
+											alt="Nobody Knows"
+											onclick="currentSlide1(12)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/twothirty.jpg"
+											alt="Two Thirty"
+											onclick="currentSlide1(13)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/sevenatenine.jpg"
+											alt="Seven Ate Nine"
+											onclick="currentSlide1(14)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/maybe.jpg"
+											alt="Maybe"
+											onclick="currentSlide1(15)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="/assets/Web/Puns/twrecks.jpg"
+											alt="T-Rex"
+											onclick="currentSlide1(16)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Audio -->
+
+						<audio id="audio1-1" class="playondemand">
+							<!-- empty audio, just used to open the modal -->
+							<source src="./assets/audio/audio1-0.mp3" type="audio/mp3" />
+						</audio>
+
+						<audio
+							id="audio1-1a"
+							class="playondemand"
+							controls
+							style="display: none"
+						>
+							<source src="./assets/audio/audio1-1.mp3" type="audio/mpeg" />
+							Your browser does not support the audio element.
+						</audio>
+
+						<audio id="audio1-2" class="playondemand">
+							<!-- empty audio, just used to open the modal -->
+							<source src="./assets/audio/audio3-2.mp3" type="audio/mp3" />
+						</audio>
+					</div>
+				</div>
+
+				<div class="item sidebar sidebar-right">
+					<!-- Buttons for Intro Text -->
+
+					<form>
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="submit"
+							formaction="https://drive.google.com/file/d/1N7Os4aJpGMLF8YCeeIwr4mhF6WwIi9fS/view?usp=drive_link"
+							formtarget="_blank"
+						>
+							<img
+								id="play1-1"
+								class="audio-button-image clickable"
+								src="/assets/nav-images/link.png"
+							/>
+							<h6 style="margin: auto">Hidato</h6>
+						</button>
+					</form>
+
+					<form>
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="submit"
+							formaction="https://drive.google.com/file/d/1FeROdyhsAaJipq1z_8fn0e3tYJ52r_rA/view?usp=drive_link"
+							formtarget="_blank"
+						>
+							<img
+								id="play1-2"
+								class="audio-button-image clickable"
+								src="/assets/nav-images/link.png"
+							/>
+							<h6 style="margin: auto">Word Search</h6>
+						</button>
+					</form>
+
+					<form>
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="submit"
+							formaction="https://drive.google.com/file/d/1M1XgeyVoCyLndlFoIyX6co6TwtudeKXV/view?usp=drive_link"
+							formtarget="_blank"
+						>
+							<img
+								id="play1-3"
+								class="audio-button-image clickable"
+								src="/assets/nav-images/link.png"
+							/>
+							<h6 style="margin: auto">Word Grid</h6>
+						</button>
+					</form>
+
+					<form>
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="submit"
+							formaction="https://drive.google.com/file/d/1IykqIXBVQFmiyZOLU6hFo5D8x2sIAU7L/view?usp=drive_link"
+							formtarget="_blank"
+						>
+							<img
+								id="play1-4"
+								class="audio-button-image clickable"
+								src="/assets/nav-images/link.png"
+							/>
+							<h6 style="margin: auto">Word Ladder</h6>
+						</button>
+					</form>
+
+					<form>
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="submit"
+							formaction="https://drive.google.com/file/d/1_yyH7ciw6A5nyunbkgCTZGkwQsfQdPzr/view?usp=sharing"
+							formtarget="_blank"
+						>
+							<img
+								id="play1-6"
+								class="audio-button-image clickable"
+								src="/assets/nav-images/link.png"
+							/>
+							<h6 style="margin: auto">Puzzles and Answers</h6>
+						</button>
+					</form>
+
+					<button
+						class="center-items right-nav-buttons clickable"
+						type="button"
+						onClick="PlayAndShowWithNav('audio1-1', 'text1-1', 'play1-1', 'prev-portrait', 'next-portrait')"
+					>
+						<img
+							id="play1-1"
+							class="audio-button-image clickable"
+							src="/assets/nav-images/play-g79150a13d_1280.png"
+						/>
+						<h6 style="margin: auto">Pun Gallery</h6>
+					</button>
+				</div>
+			</div>
+
+			<button id="prev-portrait" aria-label="Previous Slide">&lt;</button>
+			<button id="next-portrait" aria-label="Next Slide">&gt;</button>
+		</main>
+
+		<canvas id="snowfall"></canvas>
+
+		<script src="/assets/scripts/scripts-snow.js" defer></script>
+		<script src="/assets/scripts/scripts-magazine-nav.js" defer></script>
+		<script
+			type="text/javascript"
+			src="/assets/scripts/scripts-slideshow-double.js"
+		></script>
+	</body>
+</html>
